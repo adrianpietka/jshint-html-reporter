@@ -1,0 +1,23 @@
+{
+  "name": "jshint-html-reporter",
+  "version": "0.1.0",
+  "description": "Simple generator of HTML report for JSHint results.",
+  "main": "reporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aydao/jshint-html-reporter.git"
+  },
+  "keywords": [
+    "jshint",
+    "reporter"
+  ],
+  "author": "Adrian Pietka <adrian@pietka.info> (http://adrian.pietka.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aydao/jshint-html-reporter/issues"
+  },
+  "homepage": "https://github.com/aydao/jshint-html-reporter"
+}
