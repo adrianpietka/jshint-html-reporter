@@ -42,4 +42,5 @@ grunt.registerTask('default', ['jshint']);
 
 ## Release History
 
+* 0.1.1 Fixes for path of template files
 * 0.1.0 Initial release

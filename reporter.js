@@ -2,13 +2,18 @@
 
 module.exports = {
     reporter: function (result) {
+        var fs = require('fs');
+        var path = require('path');
+
         var content = "";
         var previousFile = "";
 
-        var fs = require('fs');
-        var template = fs.readFileSync('templates/bootstrap/template.html').toString();
-        var item = fs.readFileSync('templates/bootstrap/item.html').toString();
-        var header = fs.readFileSync('templates/bootstrap/header.html').toString();
+        var basePath = path.join(__dirname);
+        var templatePath = basePath + '/templates/bootstrap/';
+
+        var template = fs.readFileSync(templatePath + 'template.html').toString();
+        var item = fs.readFileSync(templatePath + 'item.html').toString();
+        var header = fs.readFileSync(templatePath + 'header.html').toString();
 
         result.forEach(function (element) {
             var file = element.file;

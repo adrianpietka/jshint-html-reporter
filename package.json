@@ -2,7 +2,10 @@
   "name": "jshint-html-reporter",
   "version": "0.1.0",
   "description": "Simple generator of HTML report for JSHint results.",
-  "main": "reporter.js",
+  "files": [
+    "index.js",
+    "reporter.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
