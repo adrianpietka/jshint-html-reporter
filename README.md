@@ -32,7 +32,7 @@ grunt.initConfig({
 	}
 });
 
-grunt.loadNpmTasks('jshint-html-reporter');
+grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.registerTask('default', ['jshint']);
 ```
 
@@ -42,6 +42,7 @@ grunt.registerTask('default', ['jshint']);
 
 ## Release History
 
+* 0.2.0 Summary of results and code refactor
 * 0.1.3 Improvements in package.json
 * 0.1.2 Improvements in package.json and template
 * 0.1.1 Fixes for path of template files
