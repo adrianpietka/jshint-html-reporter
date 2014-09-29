@@ -23,7 +23,21 @@ module.exports = {
                 .replace(/"/g, '&quot;')
                 .replace(/'/g, '&#39;')
                 .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;');
+                .replace(/>/g, '&gt;')
+                .replace(/@/g, '&#64;')
+                .replace(/\$/g, '&#36;')
+                .replace(/\(/g, '&#40;')
+                .replace(/\)/g, '&#41;')
+                .replace(/\{/g, '&#123;')
+                .replace(/\}/g, '&#125;')
+                .replace(/\[/g, '&#91;')
+                .replace(/\]/g, '&#93;')
+                .replace(/\+/g, '&#43;')
+                .replace(/=/g, '&#61;')
+                .replace(/`/g, '&#96;')
+                .replace(/\,/g, '&#44;')
+                .replace(/\!/g, '&#33;')
+                .replace(/%/g, '&#37;');
         }
 
         var numberOfFailures = {
