@@ -42,6 +42,7 @@ grunt.registerTask('default', ['jshint']);
 
 ## Release History
 
+* 0.2.1 Properly escape content for HTML output
 * 0.2.0 Summary of results and code refactor
 * 0.1.3 Improvements in package.json
 * 0.1.2 Improvements in package.json and template
