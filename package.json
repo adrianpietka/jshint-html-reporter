@@ -1,6 +1,6 @@
 {
   "name": "jshint-html-reporter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple generator of HTML report for JSHint results.",
   "files": [
     "index.js",
