@@ -13,6 +13,33 @@ module.exports = {
             summary: ''
         };
 
+        function escapeHtml(string) {
+            if (!string) {
+                return string;
+            }
+
+            return ("" + string)
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/@/g, '&#64;')
+                .replace(/\$/g, '&#36;')
+                .replace(/\(/g, '&#40;')
+                .replace(/\)/g, '&#41;')
+                .replace(/\{/g, '&#123;')
+                .replace(/\}/g, '&#125;')
+                .replace(/\[/g, '&#91;')
+                .replace(/\]/g, '&#93;')
+                .replace(/\+/g, '&#43;')
+                .replace(/=/g, '&#61;')
+                .replace(/`/g, '&#96;')
+                .replace(/\,/g, '&#44;')
+                .replace(/\!/g, '&#33;')
+                .replace(/%/g, '&#37;');
+        }
+
         var numberOfFailures = {
             failures: 0,
             errors: 0,
@@ -63,26 +90,30 @@ module.exports = {
 
                 if (previousFile !== file) {
                     previousFile = file;
-                    content += templates.itemHeader.replace('{file}', file);
+                    content += templates.itemHeader.replace('{file}', escapeHtml(file));
                 }
 
-                content += templates.item.replace('{class}', isError(error.code) ? 'danger' : 'warning')
-                    .replace('{code}', error.code)
-                    .replace('{line}', error.line)
-                    .replace('{character}', error.character)
-                    .replace('{evidence}', error.evidence)
-                    .replace('{reason}', error.reason);
+                content += templates.item
+                    .replace('{class}', isError(error.code) ? 'danger' : 'warning')
+                    .replace('{code}', escapeHtml(error.code))
+                    .replace('{line}', escapeHtml(error.line))
+                    .replace('{character}', escapeHtml(error.character))
+                    .replace('{evidence}', escapeHtml(error.evidence))
+                    .replace('{reason}', escapeHtml(error.reason));
             });
 
             return content;
         }
 
         function prepareSummary() {
-            var summary = templates.summary.replace('{failures}', numberOfFailures.failures)
-                .replace('{errors}', numberOfFailures.errors)
-                .replace('{warnings}', numberOfFailures.warnings);
+            if (!numberOfFailures.failures) {
+                return '';
+            }
 
-            return numberOfFailures.failures ? summary : '';
+            return templates.summary
+                .replace('{failures}', escapeHtml(numberOfFailures.failures))
+                .replace('{errors}', escapeHtml(numberOfFailures.errors))
+                .replace('{warnings}', escapeHtml(numberOfFailures.warnings));
         }
 
         function getRenderedHTML() {
