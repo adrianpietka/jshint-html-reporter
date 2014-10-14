@@ -13,33 +13,6 @@ module.exports = {
             summary: ''
         };
 
-        function escapeHtml(string) {
-            if (!string) {
-                return string;
-            }
-
-            return ("" + string)
-                .replace(/&/g, '&amp;')
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#39;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/@/g, '&#64;')
-                .replace(/\$/g, '&#36;')
-                .replace(/\(/g, '&#40;')
-                .replace(/\)/g, '&#41;')
-                .replace(/\{/g, '&#123;')
-                .replace(/\}/g, '&#125;')
-                .replace(/\[/g, '&#91;')
-                .replace(/\]/g, '&#93;')
-                .replace(/\+/g, '&#43;')
-                .replace(/=/g, '&#61;')
-                .replace(/`/g, '&#96;')
-                .replace(/\,/g, '&#44;')
-                .replace(/\!/g, '&#33;')
-                .replace(/%/g, '&#37;');
-        }
-
         var numberOfFailures = {
             failures: 0,
             errors: 0,
@@ -74,6 +47,33 @@ module.exports = {
             for (var template in templates) {
                 templates[template] = fs.readFileSync(templatePath + template + '.html').toString();
             }
+        }
+
+        function escapeHtml(string) {
+            if (!string) {
+                return string;
+            }
+
+            return ("" + string)
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/@/g, '&#64;')
+                .replace(/\$/g, '&#36;')
+                .replace(/\(/g, '&#40;')
+                .replace(/\)/g, '&#41;')
+                .replace(/\{/g, '&#123;')
+                .replace(/\}/g, '&#125;')
+                .replace(/\[/g, '&#91;')
+                .replace(/\]/g, '&#93;')
+                .replace(/\+/g, '&#43;')
+                .replace(/=/g, '&#61;')
+                .replace(/`/g, '&#96;')
+                .replace(/\,/g, '&#44;')
+                .replace(/\!/g, '&#33;')
+                .replace(/%/g, '&#37;');
         }
 
         function prepareContent() {
