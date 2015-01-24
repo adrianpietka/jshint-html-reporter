@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aydao/jshint-html-reporter.git"
+    "url": "https://github.com/adrianpietka/jshint-html-reporter.git"
   },
   "keywords": [
     "jshint",
     "reporter"
   ],
-  "author": "Adrian Pietka <adrian@pietka.info> (http://adrian.pietka.info/)",
+  "author": "Adrian Pietka <adrian@pietka.me> (http://adrian.pietka.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aydao/jshint-html-reporter/issues"
+    "url": "https://github.com/adrianpietka/jshint-html-reporter/issues"
   },
-  "homepage": "https://github.com/aydao/jshint-html-reporter"
+  "homepage": "https://github.com/adrianpietka/jshint-html-reporter"
 }

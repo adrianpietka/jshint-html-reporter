@@ -39,11 +39,11 @@ grunt.registerTask('default', ['jshint']);
 ## URLs
 
 * [jshint-html-reporter on npmjs](https://www.npmjs.org/package/jshint-html-reporter)
-* [jshint-html-reporter on github](https://github.com/aydao/jshint-html-reporter)
+* [jshint-html-reporter on github](https://github.com/adrianpietka/jshint-html-reporter)
 
 ## Author
 
-[Adrian Pietka](http://adrian.pietka.info)
+[Adrian Pietka](http://adrian.pietka.me)
 
 ## License
 
