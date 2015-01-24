@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/adrian/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+12 verbose folder .
+13 info prepublish jshint-html-reporter@0.2.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/adrian/.npm/1f1177db-tar.lock
+16 silly lockFile 7d450fb8-36875-0-8608084612060338-tmp-tgz tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+17 verbose lock tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz /home/adrian/.npm/7d450fb8-36875-0-8608084612060338-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 7d450fb8-36875-0-8608084612060338-tmp-tgz tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+21 silly lockFile 7d450fb8-36875-0-8608084612060338-tmp-tgz tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+22 verbose tar unpack /home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+23 silly lockFile 301b1a6b-hint-html-reporter-0-2-2-package tar:///home/adrian/.npm/jshint-html-reporter/0.2.2/package
+24 verbose lock tar:///home/adrian/.npm/jshint-html-reporter/0.2.2/package /home/adrian/.npm/301b1a6b-hint-html-reporter-0-2-2-package.lock
+25 silly lockFile 7d450fb8-36875-0-8608084612060338-tmp-tgz tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+26 verbose lock tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz /home/adrian/.npm/7d450fb8-36875-0-8608084612060338-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry README.md
+30 silly gunzTarPerm extractEntry index.js
+31 silly gunzTarPerm extractEntry reporter.js
+32 silly gunzTarPerm extractEntry templates/bootstrap/body.html
+33 silly gunzTarPerm extractEntry templates/bootstrap/item.html
+34 silly gunzTarPerm extractEntry templates/bootstrap/itemHeader.html
+35 silly gunzTarPerm extractEntry templates/bootstrap/noItems.html
+36 silly gunzTarPerm extractEntry templates/bootstrap/summary.html
+37 silly lockFile 301b1a6b-hint-html-reporter-0-2-2-package tar:///home/adrian/.npm/jshint-html-reporter/0.2.2/package
+38 silly lockFile 301b1a6b-hint-html-reporter-0-2-2-package tar:///home/adrian/.npm/jshint-html-reporter/0.2.2/package
+39 silly lockFile 7d450fb8-36875-0-8608084612060338-tmp-tgz tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+40 silly lockFile 7d450fb8-36875-0-8608084612060338-tmp-tgz tar:///home/adrian/tmp/npm-9086-DnbrHOm-/1422134336875-0.8608084612060338/tmp.tgz
+41 silly lockFile 3a52ce78- .
+42 silly lockFile 3a52ce78- .
+43 silly publish { name: 'jshint-html-reporter',
+43 silly publish   version: '0.2.2',
+43 silly publish   description: 'Simple generator of HTML report for JSHint results.',
+43 silly publish   files: [ 'index.js', 'reporter.js', 'templates/' ],
+43 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+43 silly publish   repository:
+43 silly publish    { type: 'git',
+43 silly publish      url: 'https://github.com/adrianpietka/jshint-html-reporter.git' },
+43 silly publish   keywords: [ 'jshint', 'reporter' ],
+43 silly publish   author:
+43 silly publish    { name: 'Adrian Pietka',
+43 silly publish      email: 'adrian@pietka.me',
+43 silly publish      url: 'http://adrian.pietka.me' },
+43 silly publish   license: 'MIT',
+43 silly publish   bugs: { url: 'https://github.com/adrianpietka/jshint-html-reporter/issues' },
+43 silly publish   homepage: 'https://github.com/adrianpietka/jshint-html-reporter',
+43 silly publish   readme: 'jshint-html-reporter\n====================\n\nSimple generator of HTML report for JSHint results.\n\n## Installation\n\n```bash\n$: npm install jshint-html-reporter --save\n```\n\n## Usage\n\nUse it with:\n\n#### JSHint CLI\n\n```\njshint --reporter node_modules/jshint-html-reporter/reporter.js file.js\n```\n\n#### [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)\n\n```js\ngrunt.initConfig({\n\tjshint: {\n\t\toptions: {\n\t\t\treporter: require(\'jshint-html-reporter\'),\n\t\t\treporterOutput: \'jshint-report.html\'\n\t\t},\n\t\ttarget: [\'file.js\']\n\t}\n});\n\ngrunt.loadNpmTasks(\'grunt-contrib-jshint\');\ngrunt.registerTask(\'default\', [\'jshint\']);\n```\n\n## URLs\n\n* [jshint-html-reporter on npmjs](https://www.npmjs.org/package/jshint-html-reporter)\n* [jshint-html-reporter on github](https://github.com/adrianpietka/jshint-html-reporter)\n\n## Author\n\n[Adrian Pietka](http://adrian.pietka.me)\n\n## License\n\n[MIT](http://opensource.org/licenses/MIT)\n\n## Release History\n\n* 0.2.2 HTTP protocol removed from Bootstrap CDN url\n* 0.2.1 Properly escape content for HTML output\n* 0.2.0 Summary of results and code refactor\n* 0.1.3 Improvements in package.json\n* 0.1.2 Improvements in package.json and template\n* 0.1.1 Fixes for path of template files\n* 0.1.0 Initial release\n',
+43 silly publish   readmeFilename: 'README.md',
+43 silly publish   _id: 'jshint-html-reporter@0.2.2',
+43 silly publish   _shasum: '610d9d65deffb64b9dffc74fc6ec044c1e69819b',
+43 silly publish   _from: '.' }
+44 verbose url raw jshint-html-reporter
+45 verbose url resolving [ 'https://registry.npmjs.org/', './jshint-html-reporter' ]
+46 verbose url resolved https://registry.npmjs.org/jshint-html-reporter
+47 info trying registry request attempt 1 at 22:18:57
+48 http PUT https://registry.npmjs.org/jshint-html-reporter
+49 http 403 https://registry.npmjs.org/jshint-html-reporter
+50 verbose headers { date: 'Sat, 24 Jan 2015 21:22:36 GMT',
+50 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+50 verbose headers   'content-type': 'application/json',
+50 verbose headers   'cache-control': 'max-age=60',
+50 verbose headers   'content-length': '4082',
+50 verbose headers   'accept-ranges': 'bytes',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   'x-served-by': 'cache-lhr6323-LHR',
+50 verbose headers   'x-cache': 'MISS',
+50 verbose headers   'x-cache-hits': '0',
+50 verbose headers   'x-timer': 'S1422134555.413038,VS0,VE593',
+50 verbose headers   'keep-alive': 'timeout=10, max=50',
+50 verbose headers   connection: 'Keep-Alive' }
+51 error publish Failed PUT 403
+52 error Error: forbidden cannot modify pre-existing version: 0.2.2
+52 error old={"name":"jshint-html-reporter","version":"0.2.2","description":"Simple generator of HTML report for JSHint results.","files":["index.js","reporter.js","templates/"],"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/aydao/jshint-html-reporter.git"},"keywords":["jshint","reporter"],"author":{"name":"Adrian Pietka","email":"adrian@pietka.info","url":"http://adrian.pietka.info/"},"license":"MIT","bugs":{"url":"https://github.com/aydao/jshint-html-reporter/issues"},"homepage":"https://github.com/aydao/jshint-html-reporter","_id":"jshint-html-reporter@0.2.2","_shasum":"9ba18f10c471c366697c84c354c734312f7ee7a7","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"adrian.pietka","email":"adrian@pietka.info"},"maintainers":[{"name":"adrian.pietka","email":"adrian@pietka.info"}],"dist":{"shasum":"9ba18f10c471c366697c84c354c734312f7ee7a7","tarball":"http://registry.npmjs.org/jshint-html-reporter/-/jshint-html-reporter-0.2.2.tgz"}}
+52 error new={"name":"jshint-html-reporter","version":"0.2.2","description":"Simple generator of HTML report for JSHint results.","files":["index.js","reporter.js","templates/"],"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/adrianpietka/jshint-html-reporter.git"},"keywords":["jshint","reporter"],"author":{"name":"Adrian Pietka","email":"adrian@pietka.me","url":"http://adrian.pietka.me"},"license":"MIT","bugs":{"url":"https://github.com/adrianpietka/jshint-html-reporter/issues"},"homepage":"https://github.com/adrianpietka/jshint-html-reporter","readme":"jshint-html-reporter\u000a====================\u000a\u000aSimple generator of HTML report for JSHint results.\u000a\u000a## Installation\u000a\u000a```bash\u000a$: npm install jshint-html-reporter --save\u000a```\u000a\u000a## Usage\u000a\u000aUse it with:\u000a\u000a#### JSHint CLI\u000a\u000a```\u000ajshint --reporter node_modules/jshint-html-reporter/reporter.js file.js\u000a```\u000a\u000a#### [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)\u000a\u000a```js\u000agrunt.initConfig({\u000a\u0009jshint: {\u000a\u0009\u0009options: {\u000a\u0009\u0009\u0009reporter: require('jshint-html-reporter'),\u000a\u0009\u0009\u0009reporterOutput: 'jshint-report.html'\u000a\u0009\u0009},\u000a\u0009\u0009target: ['file.js']\u000a\u0009}\u000a});\u000a\u000agrunt.loadNpmTasks('grunt-contrib-jshint');\u000agrunt.registerTask('default', ['jshint']);\u000a```\u000a\u000a## URLs\u000a\u000a* [jshint-html-reporter on npmjs](https://www.npmjs.org/package/jshint-html-reporter)\u000a* [jshint-html-reporter on github](https://github.com/adrianpietka/jshint-html-reporter)\u000a\u000a## Author\u000a\u000a[Adrian Pietka](http://adrian.pietka.me)\u000a\u000a## License\u000a\u000a[MIT](http://opensource.org/licenses/MIT)\u000a\u000a## Release History\u000a\u000a* 0.2.2 HTTP protocol removed from Bootstrap CDN url\u000a* 0.2.1 Properly escape content for HTML output\u000a* 0.2.0 Summary of results and code refactor\u000a* 0.1.3 Improvements in package.json\u000a* 0.1.2 Improvements in package.json and template\u000a* 0.1.1 Fixes for path of template files\u000a* 0.1.0 Initial release\u000a","readmeFilename":"README.md","_id":"jshint-html-reporter@0.2.2","_shasum":"610d9d65deffb64b9dffc74fc6ec044c1e69819b","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"adrian.pietka","email":"adrian@pietka.info"},"maintainers":[{"name":"adrian.pietka","email":"adrian@pietka.info"}],"dist":{"shasum":"610d9d65deffb64b9dffc74fc6ec044c1e69819b","tarball":"http://registry.npmjs.org/jshint-html-reporter/-/jshint-html-reporter-0.2.2.tgz"}}: jshint-html-reporter
+52 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+52 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+52 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+52 error     at Request.EventEmitter.emit (events.js:98:17)
+52 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+52 error     at Request.EventEmitter.emit (events.js:117:20)
+52 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+52 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+52 error     at _stream_readable.js:919:16
+52 error     at process._tickCallback (node.js:419:13)
+53 error If you need help, you may report this *entire* log,
+53 error including the npm and node versions, at:
+53 error     <http://github.com/npm/npm/issues>
+54 error System Linux 3.2.0-4-amd64
+55 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+56 error cwd /home/adrian/Shared/projects/jshint-html-reporter
+57 error node -v v0.10.28
+58 error npm -v 1.4.9
+59 verbose exit [ 1, true ]

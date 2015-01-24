@@ -43,14 +43,18 @@ grunt.registerTask('default', ['jshint']);
 
 ## Author
 
-[Adrian Pietka](http://adrian.pietka.me)
+Adrian Pietka
+
+* [http://adrian.pietka.me](http://adrian.pietka.me)
+* [adrian@pietka.me](mailto:adrian@pietka.me)
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0) &copy; Adrian Pietka
 
 ## Release History
 
+* 0.2.3 Changed license to CC 4.0
 * 0.2.2 HTTP protocol removed from Bootstrap CDN url
 * 0.2.1 Properly escape content for HTML output
 * 0.2.0 Summary of results and code refactor
