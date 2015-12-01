@@ -15,14 +15,14 @@ Use it with:
 
 #### JSHint CLI
 
-```
+```bash
 # standard output
-jshint --reporter node_modules/jshint-html-reporter/reporter.js file.js
-jshint --reporter node_modules/jshint-html-reporter/reporter.js controllers/*.js
+$: jshint --reporter node_modules/jshint-html-reporter/reporter.js file.js
+$: jshint --reporter node_modules/jshint-html-reporter/reporter.js controllers/*.js
 
 # redirect output to HTML file
-jshint --reporter node_modules/jshint-html-reporter/reporter.js file.js > report.html
-jshint --reporter node_modules/jshint-html-reporter/reporter.js controllers/*.js > report.html
+$: jshint --reporter node_modules/jshint-html-reporter/reporter.js file.js > report.html
+$: jshint --reporter node_modules/jshint-html-reporter/reporter.js controllers/*.js > report.html
 ```
 
 #### [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
