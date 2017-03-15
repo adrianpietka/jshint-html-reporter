@@ -60,6 +60,7 @@ Adrian Pietka
 
 ## Release History
 
+* 0.2.5 Fixed page overflow when there are long lines of code
 * 0.2.4 Using HTTPS protocol for Bootstrap CDN url
 * 0.2.3 Changed license to CC 4.0
 * 0.2.2 HTTP protocol removed from Bootstrap CDN url
